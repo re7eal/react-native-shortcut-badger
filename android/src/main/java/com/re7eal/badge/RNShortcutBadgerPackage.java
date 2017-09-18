@@ -1,4 +1,4 @@
-package com.botbie.badge;
+package com.re7eal.badge;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
@@ -10,11 +10,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Created by dry on 9/23/16.
- */
-
-public class BadgeNumberPackage implements ReactPackage {
+public class RNShortcutBadgerPackage implements ReactPackage {
 
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
@@ -23,7 +19,7 @@ public class BadgeNumberPackage implements ReactPackage {
         return modules;
     }
 
-    @Override
+    // Deprecated from RN 0.47
     public List<Class<? extends JavaScriptModule>> createJSModules() {
         return Collections.emptyList();
     }
