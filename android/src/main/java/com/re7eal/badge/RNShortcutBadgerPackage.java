@@ -15,7 +15,7 @@ public class RNShortcutBadgerPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
-        modules.add(new BadgeNumberModule(reactContext));
+        modules.add(new RNShortcutBadgerModule(reactContext));
         return modules;
     }
 
